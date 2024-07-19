@@ -9,6 +9,7 @@ const Login = () => {
     const [id, setId] = useState("");
     const [password, setPassword] = useState("");
     const { setUser } = useContext(UserContext);
+    const { login } = useContext(UserContext);
     const navigate = useNavigate();
 
     const handleLogin = () => {
@@ -21,9 +22,10 @@ const Login = () => {
                 id: decodedToken._id,
                 type: decodedToken.type,
             };
-
+            login(user);
             // localStorage.setItem('user', JSON.stringify(user));
             console.log('User:', user);
+
             navigate('/conference');
 
         });

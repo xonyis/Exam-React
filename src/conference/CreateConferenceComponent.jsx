@@ -71,8 +71,8 @@ const CreateConferenceComponent = () => {
             <h1>Create Conference</h1>
             <input type="text" name="id" value={conference.id} onChange={handleChange} placeholder="ID" required />
             <input type="text" name="title" value={conference.title} onChange={handleChange} placeholder="Title" required />
-            <input type="text" name="date" value={conference.date} onChange={handleChange} placeholder="Date" required />
-            <input type="text" name="createdAt" value={conference.createdAt} onChange={handleChange} placeholder="Created At" required />
+            <input type="date" name="date" value={conference.date} onChange={handleChange} placeholder="Date" required />
+            <input type="date" name="createdAt" value={conference.createdAt} onChange={handleChange} placeholder="Created At" required />
             <input type="text" name="description" value={conference.description} onChange={handleChange} placeholder="Description" required />
             <input type="text" name="img" value={conference.img} onChange={handleChange} placeholder="Image" required />
             <input type="text" name="content" value={conference.content} onChange={handleChange} placeholder="Content" required />

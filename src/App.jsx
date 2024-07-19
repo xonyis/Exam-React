@@ -11,9 +11,11 @@ import AdminConference from "./pages/AdminConference";
 import CreateConference from "./pages/CreateConference";
 import EditConference from "./pages/EditConference";
 import ConferenceDetails from "./conference/ConferenceDetails";
+import {UserProvider} from "./context/UserContext";
 
 function App() {
   return (
+      <UserProvider>
       <Router>
           <Navbar />
           <Routes>
@@ -27,6 +29,7 @@ function App() {
               <Route path="/adminconference" element={<AdminConference />} />
           </Routes>
       </Router>
+      </UserProvider>
   );
 }
 
