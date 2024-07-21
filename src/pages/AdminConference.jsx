@@ -7,7 +7,6 @@ const AdminConference = () => {
     return (
         <div>
             <h1>Admin Conference Page</h1>
-            <p>Welcome, Admin!</p>
             <TableAdminConference/>
         </div>
     );

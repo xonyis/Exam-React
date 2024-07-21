@@ -2,9 +2,7 @@
 import './App.css';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Navbar from './NavBar/Navbar';
-import Home from "./pages/Home";
 import Login from "./pages/Login";
-import About from "./pages/About";
 import Conference from "./pages/Conference";
 import AdminUser from "./pages/AdminUser";
 import AdminConference from "./pages/AdminConference";
@@ -19,7 +17,7 @@ function App() {
       <Router>
           <Navbar />
           <Routes>
-              <Route path="/" element={<Home />} />
+              <Route path="/" element={<Login />} />
               <Route path="/login" element={<Login />} />
               <Route path="/conference" element={<Conference />} />
               <Route path="/adminuser" element={<AdminUser />} />

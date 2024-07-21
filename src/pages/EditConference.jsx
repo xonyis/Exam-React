@@ -1,10 +1,9 @@
 // src/pages/Home.js
 import {useState, useEffect} from "react";
-import { useParams, useNavigate, useLocation } from 'react-router-dom';
+import { useParams, useNavigate } from 'react-router-dom';
 import axios from '../axiosConfig';
 const EditConference = () => {
     const { id } = useParams();
-    const location = useLocation();
     const navigate = useNavigate();
     const [conference, setConference] = useState({
         id: '',
